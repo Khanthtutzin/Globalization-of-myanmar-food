@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+*{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Dosis', sans-serif; */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*start nav  */
+.navbuttons{
+    border: none;
+}
+
+.navbuttons:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.lines1,.lines2,.lines3{
+    width: 17px;
+    height: 2px;
+    margin: 3px;
+}
+
+.menustyle li a{
+    color: #000;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.menustyle li a:nth-of-type(1):hover{
+    color: red;
+}
+
+.crossxs .lines1{
+    transform: rotate(-45deg) translate(-3px,4px);
+}
+
+.crossxs .lines2{
+    opacity: 0;
+}
+
+.crossxs .lines3{
+    transform: rotate(45deg) translate(-3px,-4px);
+}
+/* end nav  */
+
+/* start banners  */
+.mainintro{
+    margin-top: 200px;
+    margin-bottom: 250px;
+
+    position: relative;
+}
+
+.mainintro .banners h4{
+    font-size: 80px;
+}
+
+.mainintro .mainbg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #fff800 0%,
+      #de1a24 50%,
+      #3f8f29 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  } 
+
+/* end banner  */
+
+#traditional-dishes .mmdishes{
+    width: auto;
+    background-color: darkgray;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+/* start foods  */
+
+.carousel{
+    position: relative;
+}
+
+.carousel-item{
+    display: none;
+}
+
+.carousel-indicatiors {
+    width: 100%;
+    
+    text-align: center;
+    list-style-type: none;
+
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+
+    transform: translate(-52%);
+}
+
+.carousel-indicatiors .dot{
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    margin: 0 5px;
+}
+
+.carousel-indicatiors .dot:hover,.carousel-indicatiors .active{
+    background-color: #888;
+}
+
+.carousel-control-prev , .carousel-control-next {
+    /* background-color: steelblue; */
+    color: #000;
+    font-size: 25px;
+    text-decoration: none;
+
+    position: absolute;
+    top: 50%;
+
+    padding: 20px;
+
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev{
+    left: 0;
+}
+
+.carousel-control-next{
+    right: 0;
+}
+
+.carousel-control-prev:hover{
+    color: #888;
+    animation-name: forleft;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.carousel-control-next:hover{
+    color: #888;
+
+    color: #888;
+    animation-name: forright;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes forleft{
+    from{
+        left: 0;
+        opacity: 0.5;
+    }
+
+    to{
+        left: 10px;
+        opacity: 1;
+    }
+}
+
+@keyframes forright{
+    from{
+        right: 0;
+        opacity: 0.5;
+    }
+
+    to{
+        right: 10px;
+        opacity: 1;
+    }
+}
+
+.card-bg{
+    background-color: #ddd;
+}
+
+.fromlefts{
+    animation-name: fromleftani;
+    animation-duration: 3s;
+}
+
+.fromrights{
+    animation-name: fromrightani;
+    animation-duration: 3s;
+}
+
+@keyframes fromleftani{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fromrightani{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* end foods  */
