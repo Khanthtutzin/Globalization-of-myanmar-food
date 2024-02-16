@@ -252,4 +252,16 @@ body{
     }
 }
 
+@media (max-width: 1195px){
+    .monastic{
+        display: none;
+    }
+}
+
+@media (max-width:450px){
+    .cookingwheart{
+        width: 250px;
+    }
+}
+
 /* end foods  */
