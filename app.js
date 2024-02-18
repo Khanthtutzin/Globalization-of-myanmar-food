@@ -32,6 +32,7 @@ $(document).ready(function(){
 
 //Javascript Area
 
+// TRADIOTIONAL DELIGHTS AREA
 const slides = document.getElementsByClassName('carousel-item');
 const dots = document.querySelectorAll('.dot');
 // console.log(slides);
@@ -112,3 +113,9 @@ for(var q = 0; q < dots.length; q++){
   });
 
 }
+//END TRADIOTIONAL DELIGHTS AREA
+
+//START MOST FAMOUS FOODS AREA
+
+
+//END MOST FAMOUS FOODS AREA

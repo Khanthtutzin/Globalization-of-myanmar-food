@@ -13,6 +13,8 @@
 body{
     margin: 0;
     padding: 0;
+
+    flex-direction: column;
 }
 
 /*start nav  */
@@ -104,12 +106,19 @@ body{
   } 
 
 /* end banner  */
+#traditional-dishes{
+    background-color: #A3C1AD;
+
+    /* background-color: #FFFF00; */
+    width: 100%;
+    padding: 20px;
+}
 
 #traditional-dishes .mmdishes{
     width: auto;
-    background-color: darkgray;
+    background-color: #ddd;
     border-radius: 25px;
-    padding: 20px;
+    padding: 40px;
 }
 
 /* start foods  */
@@ -216,9 +225,27 @@ body{
     }
 }
 
+/* card  */
 .card-bg{
     background-color: #ddd;
 }
+
+.card{
+    transition: 0.8s;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+}
+
+/* card */
+
+/* most famous section  */
+
+
+
+
+/* most famous section  */
 
 .fromlefts{
     animation-name: fromleftani;
