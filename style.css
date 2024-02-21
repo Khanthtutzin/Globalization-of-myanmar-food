@@ -331,3 +331,31 @@ body{
 
 
 /* End Ingredients on the Move */
+@media (max-width:978px){
+    .purecode{
+        width: 700px;
+    }
+}
+
+@media (max-width:738px){
+    .purecode{
+        width: 500px;
+    }
+}
+
+@media (max-width:482px){
+    .purecode{
+        width: 300px;
+    }
+}
+
+@media (max-width:290px){
+    .purecode{
+        width: 200px;
+    }
+}
+
+/* ABOUT WEBSITE  */
+
+
+/* END ABOUT WEBSITE  */
