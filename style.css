@@ -293,15 +293,16 @@ body{
 /* end foods  */
 
 /* Start Ingredients on the Move */
-
-#global-ingredients .suggest span{
+#global-ingredients .suggest a{
+    text-decoration: none;
+    color: #000;
     border: 1px solid #191970;
     border-radius: 25px;
 
     padding: 5px;
 }
 
-#global-ingredients .suggest span:hover{
+#global-ingredients .suggest a:hover{
     background-color: #191970;
     color: #fff;
     cursor: pointer;
