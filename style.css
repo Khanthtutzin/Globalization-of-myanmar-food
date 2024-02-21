@@ -3,6 +3,8 @@
 
 *{
     font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 body{
@@ -13,6 +15,12 @@ body{
 }
 
 /*start nav  */
+
+.navbar{
+    background-color:#F0F8FF ;
+    /* background-color: #E1EBEE; */
+}
+
 .navbuttons{
     border: none;
 }
@@ -52,18 +60,33 @@ body{
 /* end nav  */
 
 /* start banners  */
-.mainintro{
+/* .mainintro{
     margin-top: 200px;
     margin-bottom: 250px;
 
     position: relative;
+} */
+
+.mainintro .background-image{
+    background-image: url(./images/baganbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    position: relative;
 }
 
-.mainintro .banners h4{
+.mainintro .banners h5{
     font-size: 80px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
 }
 
-.mainintro .mainbg{
+/* .mainintro .mainbg{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -71,17 +94,17 @@ body{
     transform: translate(-50%,-50%);
     z-index: -1;
     opacity: 0.5;
-}
+} */
 
 .animate-charcter {
     text-transform: uppercase;
-    background-image: linear-gradient(
-      -225deg,
-      #fff800 0%,
-      #de1a24 50%,
-      #3f8f29 100%
+    background-image:linear-gradient(
+        -225deg,
+        #e699b7 0%,
+        #638cad 50%,
+        #615491 100%
     );
-    background-size: auto auto;
+    background-size:auto auto;
     background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
@@ -107,6 +130,10 @@ body{
     /* background-color: #FFFF00; */
     width: 100%;
     padding: 20px;
+}
+
+.foods{
+    border-radius: 25px;
 }
 
 #traditional-dishes .mmdishes{
@@ -272,12 +299,6 @@ body{
     100%{
         transform: translateX(0px);
         opacity: 1;
-    }
-}
-
-@media (max-width: 1195px){
-    .monastic{
-        display: none;
     }
 }
 
