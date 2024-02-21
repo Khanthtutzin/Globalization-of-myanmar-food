@@ -27,6 +27,12 @@ $(document).ready(function(){
 
     });
 
+        // Start Footer Section 
+        const getyear = $('#getyear');
+        const getfullyear = new Date().getFullYear();
+        getyear.text(getfullyear);
+        // End Footer Section
+
 });
 
 
@@ -114,8 +120,3 @@ for(var q = 0; q < dots.length; q++){
 
 }
 //END TRADIOTIONAL DELIGHTS AREA
-
-//START MOST FAMOUS FOODS AREA
-
-
-//END MOST FAMOUS FOODS AREA
